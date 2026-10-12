@@ -36,6 +36,8 @@ class KartuProfil extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Candra Herdiansyah"),
+                  SizedBox(height: 4),
+                  Text("XII RPL 2"),
                   // Tambahkan widget anak kolom lainnya di sini jika ada
                 ],
               ),
