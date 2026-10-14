@@ -1,17 +1,32 @@
 import 'package:flutter/material.dart';
-// import 'package:rpl2/container_widget/LatihanContainer.dart';
-// import 'package:rpl2/row_column_widget/ColumnWidget.dart';
-// import 'package:rpl2/row_column_widget/RowWidget.dart';
-// import 'package:rpl2/row_column_widget/RowColumnWidget.dart';
-// import 'package:rpl2/row_column_widget/layout2.dart';
-// import 'package:rpl2/row_column_widget/LatihanDua.dart';
-// import 'package:rpl2/sized_expanded_stack/SizedBoxWidget.dart';
-// import 'package:rpl2/sized_expanded_stack/ExpandedWidget.dart';
-// import 'package:rpl2/sized_expanded_stack/StackWidget.dart';
-// import 'package:rpl2/sized_expanded_stack/LayoutTiga.dart';
-// import 'package:rpl2/list_grid_view/grid_basic.dart';
-// import 'package:rpl2/list_grid_view/grid_screen.dart';
-import 'package:rpl2/list_grid_view/instagram_clone.dart'; // Diimpor ke file instagram_page.dart
+
+import 'package:rpl2/container_widget/LatihanContainer.dart';
+
+import 'package:rpl2/row_column_widget/ColumnWidget.dart';
+import 'package:rpl2/row_column_widget/RowWidget.dart';
+import 'package:rpl2/row_column_widget/RowColumnWidget.dart';
+
+import 'package:rpl2/sized_expanded_stack/SizedBoxWidget.dart';
+import 'package:rpl2/sized_expanded_stack/ExpandedWidget.dart';
+import 'package:rpl2/sized_expanded_stack/StackWidget.dart';
+import 'package:rpl2/sized_expanded_stack/LayoutSatu.dart';
+import 'package:rpl2/sized_expanded_stack/LayoutDua.dart';
+import 'package:rpl2/sized_expanded_stack/LayoutTiga.dart';
+import 'package:rpl2/sized_expanded_stack/LatihanLayout.dart';
+
+import 'package:rpl2/list_grid_view/ListView.dart';
+import 'package:rpl2/list_grid_view/List_View_builder.dart';
+import 'package:rpl2/list_grid_view/List_View_separated.dart';
+import 'package:rpl2/list_grid_view/Grid_View_basic.dart';
+import 'package:rpl2/list_grid_view/Grid_View_builder.dart';
+import 'package:rpl2/list_grid_view/Instagram.dart';
+import 'package:rpl2/list_grid_view/GridScreen.dart';
+import 'package:rpl2/list_grid_view/GridProduct.dart';
+
+import 'package:rpl2/pages/home_page.dart'; 
+import 'package:rpl2/pages/about_page.dart';
+
+import 'package:rpl2/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,10 +38,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Flutter Pertamaku",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: const InstagramPage(), // Diubah memanggil InstagramPage
-      ),
+      initialRoute: '/',
+      routes: AppRoutes.routes,
     );
   }
 }
